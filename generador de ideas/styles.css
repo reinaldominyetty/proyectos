@@ -1,0 +1,260 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #d7e2f7;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    text-align: center;
+    background-color: #fff;
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+   
+    
+  
+ 
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 2px solid #007bff;
+    outline: none;
+    transition: border-color 0.3s;
+    animation: borderAnimation 3.5s infinite;
+}
+
+input[type="text"]:hover, input[type="text"]:focus {
+    border-color: #0056b3;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 3px;
+    margin-left: 2px;
+}
+#btnGenerar{
+    margin-left: 22px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#mostrarIdea {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.menu {
+    text-align: center;
+    
+}
+
+.menu-lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+    
+}
+
+.menu-item {
+    display: inline-block;
+    margin-right: 20px;
+    
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+  
+}
+
+.menu-item a:hover {
+    color: #48a0ff;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+}
+header {
+    
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background:#456780;
+}
+
+.menu {
+    text-align: right;
+    margin-right: 60px;
+}
+footer {
+    text-align: center;
+    padding: 20px 0;
+
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #456780;
+}
+.encabezado-contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    text-align: right;
+}
+h1{
+    padding: 0;
+    font-size: 30px;
+    margin-left: 100px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #f2f2f2ff;
+    
+    
+    
+}
+.encabezado-contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    text-align: right;
+}
+
+.oculto {
+    display: none;
+}
+
+.acerca-de-contenido {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.acerca-de-contenido h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.acerca-de-contenido p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+.contacto-contenido {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contacto-contenido h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contacto-contenido p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.contacto-contenido a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contacto-contenido a:hover {
+    color: #0056b3;
+}
+.reloj-ip {
+    text-align: right;
+    padding: 10px;
+    
+    font-size: 14px;
+    color: #f2f2f2ff;
+    border-radius: 20px;
+    margin-left: 5px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    height: 55px;
+    
+}
+.reloj-ip:hover{
+    box-shadow:3px 2px 20px rgba(0, 0, 0, 0.3);
+    margin-left: 5px;
+    cursor: pointer;
+   
+}
+.color-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding: 10px;
+    border: 2px solid #3498db;
+    border-radius: 10px;
+    position: relative;
+}
+
+@keyframes borderAnimation {
+    0% {
+        transform: scale(1);
+        border-color: #254a61;
+    }
+    50% {
+        transform: scale(1.05);
+        border-color: #3ab0ff;
+    }
+    100% {
+        transform: scale(1);
+        border-color: #0056b3;
+    }
+}
+
+.color-container:hover {
+    animation: borderAnimation 1.5s infinite;
+}
+
+
+
