@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(#fff, #ccc);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Establece la altura de la vista del dispositivo */
+    margin: 0;
+    font-size: 100%;
+}
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    
+    flex-wrap: wrap; /* Permite que los elementos fluyan hacia abajo en pantallas pequeñas */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: flex-start; /* Alinea los elementos arriba en pantallas pequeñas */
+   
+}
+
+h1 {
+    color: #444;
+    font-family: 'Times New Roman', Times, serif;
+}
+h3{
+    color: #555;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+}
+
+.color-palette {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.color-box {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #666;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #777;
+}
+.color-code {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+}
+/* Estilo para el campo de entrada */
+#color-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 200px;
+}
+
+/* Estilo para el botón de búsqueda */
+#search-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #666;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#search-button:hover {
+    background-color: #777;
+}
+/* Estilos para el mensaje de error */
+.message {
+    font-size: 20px;
+    color: #FF5733; /* Color rojo */
+    margin-top: 10px;
+    transition: opacity 0.3s ease; /* Agrega una transición suave */
+    opacity: 0; /* Inicialmente, el mensaje estará oculto */
+}
+
+/* Estilo para mostrar el mensaje */
+.message.show {
+    opacity: 1; /* Muestra el mensaje cuando tiene la clase 'show' */
+}
+/* Ejemplo de media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    /* Estilos para pantallas pequeñas */
+    .container {
+        max-width: 100%; /* Hace que el contenido se ajuste al ancho de la pantalla */
+        padding: 10px; /* Cambia el relleno para dispositivos pequeños */
+    }
+    /* Más reglas de estilo específicas para pantallas pequeñas aquí... */
+}
+
+
+
+
